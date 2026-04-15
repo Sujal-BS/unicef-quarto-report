@@ -8,11 +8,59 @@
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             line-height: 1.8;
-            max-width: 1150px;
-            margin: 40px auto;
-            padding: 25px;
-            color: #333;
+            margin: 0;
+            padding: 0;
             background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            gap: 40px;
+            padding: 0 20px;
+        }
+        /* Sticky Table of Contents */
+        .toc {
+            position: sticky;
+            top: 40px;
+            align-self: flex-start;
+            width: 280px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+        .toc h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc li {
+            margin: 12px 0;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #555;
+            transition: all 0.3s;
+        }
+        .toc a:hover,
+        .toc a.active {
+            color: #3498db;
+            font-weight: bold;
+        }
+        /* Main Content */
+        .content {
+            flex: 1;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
         }
         h1 {
             color: #2c3e50;
@@ -22,12 +70,9 @@
         }
         h2 {
             color: #2c3e50;
-            border-left: 8px solid #3498db;
-            padding-left: 18px;
-            margin-top: 40px;
-        }
-        h3 {
-            color: #2980b9;
+            border-left: 6px solid #3498db;
+            padding-left: 15px;
+            margin-top: 45px;
         }
         img {
             max-width: 100%;
@@ -41,114 +86,114 @@
             color: #e74c3c; 
             font-weight: bold;
         }
-        .section {
-            background: white;
-            padding: 32px;
-            margin-bottom: 40px;
-            border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-        }
-        .toc {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-        .toc ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .toc a {
-            text-decoration: none;
-            color: #2980b9;
-        }
-        .toc a:hover {
-            text-decoration: underline;
-        }
         .author {
             text-align: center;
             font-size: 1.15em;
             color: #555;
-            margin: 25px 0 45px 0;
+            margin: 20px 0 40px 0;
         }
     </style>
 </head>
 <body>
 
-<h1>Vitamin A Supplementation: Saving Children's Lives Worldwide</h1>
-<p class="author"><strong>Sujal Boodgere Sunil - A00096721</strong> | BAA1030 UNICEF Data Analyst Report</p>
+<div class="container">
+    <!-- Sticky Table of Contents -->
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#executive-summary" class="toc-link">1. Executive Summary</a></li>
+            <li><a href="#why-it-matters" class="toc-link">2. Why This Issue Matters</a></li>
+            <li><a href="#key-findings" class="toc-link">3. Key Findings</a></li>
+            <li><a href="#data-methodology" class="toc-link">4. Data & Methodology</a></li>
+            <li><a href="#visual-analysis" class="toc-link">5. Visual Analysis</a></li>
+            <li><a href="#recommendations" class="toc-link">6. Recommendations</a></li>
+        </ul>
+    </div>
 
-<div class="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#executive-summary">1. Executive Summary</a></li>
-        <li><a href="#why-it-matters">2. Why This Issue Matters</a></li>
-        <li><a href="#key-findings">3. Key Findings</a></li>
-        <li><a href="#data-methodology">4. Data & Methodology</a></li>
-        <li><a href="#visual-analysis">5. Visual Analysis</a></li>
-        <li><a href="#recommendations">6. Recommendations & Call to Action</a></li>
-    </ul>
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Vitamin A Supplementation: Saving Children's Lives Worldwide</h1>
+        <p class="author"><strong>Sujal Boodgere Sunil - A00096721</strong> | BAA1030 UNICEF Data Analyst Report</p>
+
+        <div id="executive-summary">
+            <h2>1. Executive Summary</h2>
+            <p>Vitamin A deficiency is one of the leading preventable causes of childhood blindness and mortality. Simple twice-yearly supplementation can reduce child mortality by up to <span class="highlight">23%</span> in children aged 6–59 months.</p>
+            <p>This report analyses global coverage using UNICEF data and highlights where urgent action is needed.</p>
+        </div>
+
+        <div id="why-it-matters">
+            <h2>2. Why This Issue Matters</h2>
+            <p>Every year, hundreds of thousands of children suffer or die due to Vitamin A deficiency. Supplementation is a highly cost-effective way to protect them. Understanding current coverage helps UNICEF and governments take better action.</p>
+        </div>
+
+        <div id="key-findings">
+            <h2>3. Key Findings</h2>
+            <ul>
+                <li>Global coverage has improved since 2000, but large regional gaps remain.</li>
+                <li>Higher GDP per capita strongly correlates with better supplementation rates.</li>
+                <li>Several countries still have coverage below 10%.</li>
+                <li>Coverage dropped noticeably in 2020 due to COVID-19.</li>
+                <li>Low coverage is often linked to higher child mortality (ages 5–9).</li>
+            </ul>
+        </div>
+
+        <div id="data-methodology">
+            <h2>4. Data & Methodology</h2>
+            <p>Data from UNICEF Indicator 1 (Vitamin A coverage) and Indicator 2 (child mortality) were merged with World Bank metadata using Polars. All visualisations were created with plotnine in Python.</p>
+        </div>
+
+        <div id="visual-analysis">
+            <h2>5. Visual Analysis</h2>
+
+            <h3>World Map – Vitamin A Coverage (2023)</h3>
+            <img src="world_map.png" alt="World Map">
+
+            <h3>Bar Chart – 10 Countries with Lowest Coverage (2023)</h3>
+            <img src="bar_chart.png" alt="Bar Chart">
+
+            <h3>Scatterplot with Linear Regression – GDP vs Coverage</h3>
+            <img src="scatter_plot.png" alt="Scatterplot">
+
+            <h3>Time-Series – Global Average Coverage Trend (2000–2023)</h3>
+            <img src="time_series.png" alt="Time Series">
+        </div>
+
+        <div id="recommendations">
+            <h2>6. Recommendations & Call to Action</h2>
+            <p>To improve child survival, we recommend:</p>
+            <ul>
+                <li>Strengthening supply chains for reliable delivery.</li>
+                <li>Integrating supplementation with routine immunisation.</li>
+                <li>Running community awareness campaigns.</li>
+                <li>Providing extra support to low-coverage countries.</li>
+            </ul>
+            <p>Every percentage point increase in coverage can save thousands of young lives.</p>
+        </div>
+    </div>
 </div>
 
-<div class="section" id="executive-summary">
-    <h2>1. Executive Summary</h2>
-    <p>Vitamin A deficiency is a major yet preventable threat to child health worldwide. It causes blindness and weakens immunity, making children more vulnerable to infections. Simple twice-yearly Vitamin A supplements can reduce child mortality by up to <span class="highlight">23%</span> in children aged 6–59 months.</p>
-    <p>This report analyses global supplementation coverage using UNICEF data, explores its links with economic factors and child mortality, and provides clear recommendations to improve outcomes.</p>
-</div>
+<script>
+    // Highlight active TOC link while scrolling
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const sections = document.querySelectorAll('.content > div[id]');
+        const links = document.querySelectorAll('.toc a');
 
-<div class="section" id="why-it-matters">
-    <h2>2. Why This Issue Matters</h2>
-    <p>Every year, hundreds of thousands of children suffer or die from Vitamin A deficiency. Supplementation is one of the most cost-effective public health interventions available. By raising awareness and understanding current coverage gaps, we can support UNICEF and governments to reach every child who needs protection.</p>
-</div>
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (scrollY >= sectionTop - 100) {
+                current = section.getAttribute('id');
+            }
+        });
 
-<div class="section" id="key-findings">
-    <h2>3. Key Findings</h2>
-    <ul>
-        <li>Global coverage has improved since 2000, but large disparities remain between regions.</li>
-        <li>Higher GDP per capita is strongly associated with better supplementation rates.</li>
-        <li>Several countries still have coverage below 10%, leaving millions of children at risk.</li>
-        <li>Coverage dropped noticeably in 2020 due to COVID-19 disruptions.</li>
-        <li>Low coverage often correlates with higher child mortality in the 5–9 age group.</li>
-    </ul>
-</div>
-
-<div class="section" id="data-methodology">
-    <h2>4. Data & Methodology</h2>
-    <p>Data from UNICEF Indicator 1 (Vitamin A coverage) and Indicator 2 (mortality 5–9) were merged with World Bank metadata using the Polars library in Python. Cleaning, filtering, grouping, and summarising were performed efficiently. All visualisations were created with the plotnine package for clear, reproducible results.</p>
-</div>
-
-<div class="section" id="visual-analysis">
-    <h2>5. Visual Analysis</h2>
-
-    <h3>World Map – Vitamin A Coverage (2023)</h3>
-    <img src="world_map.png" alt="World Map of Vitamin A Coverage 2023">
-    <p>High coverage is seen in East Asia, Latin America, and parts of South Asia. Many countries in sub-Saharan Africa and conflict zones show low coverage.</p>
-
-    <h3>Bar Chart – 10 Countries with Lowest Coverage (2023)</h3>
-    <img src="bar_chart.png" alt="10 Countries with Lowest Vitamin A Coverage">
-    <p>These countries need urgent support to protect their children.</p>
-
-    <h3>Scatterplot with Linear Regression – GDP per Capita vs Coverage</h3>
-    <img src="scatter_plot.png" alt="GDP per Capita vs Vitamin A Coverage">
-    <p>The upward trend line confirms that economic development supports better programme delivery.</p>
-
-    <h3>Time-Series – Global Average Coverage Trend (2000–2023)</h3>
-    <img src="time_series.png" alt="Global Average Vitamin A Coverage Trend">
-    <p>Long-term progress is visible, but the 2020 dip highlights vulnerability to global disruptions.</p>
-</div>
-
-<div class="section" id="recommendations">
-    <h2>6. Recommendations & Call to Action</h2>
-    <p>To save more lives, the following actions are recommended:</p>
-    <ul>
-        <li>Strengthen supply chains for reliable delivery.</li>
-        <li>Integrate supplementation with routine immunisation.</li>
-        <li>Run community awareness campaigns to increase uptake.</li>
-        <li>Provide targeted funding and technical support to low-coverage countries.</li>
-    </ul>
-    <p>Every percentage point increase in coverage can prevent thousands of child deaths annually.</p>
-</div>
+        links.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
