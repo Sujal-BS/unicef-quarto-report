@@ -54,73 +54,26 @@
             color: #555;
             margin: 25px 0 45px 0;
         }
-        .note {
-            font-size: 0.95em;
-            color: #666;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
+        .redirect-note {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 6px solid #f39c12;
+            margin-bottom: 30px;
+            border-radius: 6px;
         }
     </style>
 </head>
 <body>
+
+<div class="redirect-note">
+    <strong>Note:</strong> This is the main report page. All visualisations and analysis are presented below. 
+    (If you add more pages later, this can automatically redirect.)
+</div>
 
 <h1>Vitamin A Supplementation: Saving Children's Lives Worldwide</h1>
 <p class="author"><strong>Sujal Boodgere Sunil - A00096721</strong> | BAA1030 UNICEF Data Analyst Report</p>
 
 <div class="section">
     <h2>Executive Summary</h2>
-    <p>Vitamin A is essential for healthy vision, immune function, and growth in children. Deficiency in this vital nutrient is a major public health issue, especially in low-income countries. It can lead to preventable blindness and increases the risk of death from common infections like measles and diarrhoea.</p>
-    <p>Fortunately, simple Vitamin A supplementation twice a year can dramatically improve child survival. Studies show it can reduce mortality by up to <span class="highlight">23%</span> in children aged 6 to 59 months.</p>
-    <p>This report examines global coverage of Vitamin A supplementation, its link with economic factors, and its impact on child mortality using the latest UNICEF data.</p>
-</div>
-
-<div class="section">
-    <h2>Key Findings</h2>
-    <ul>
-        <li>Many countries have made good progress in coverage since 2000, but huge gaps still exist between rich and poor nations.</li>
-        <li>Countries with higher GDP per capita generally achieve much better supplementation rates.</li>
-        <li>Several countries continue to have coverage below 10%, leaving millions of children at serious risk.</li>
-        <li>The COVID-19 pandemic caused a clear drop in coverage in 2020 across many regions.</li>
-        <li>Low coverage is often linked to higher child mortality rates between ages 5 and 9.</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Visual Analysis</h2>
-
-    <h3>1. World Map – Vitamin A Coverage in 2023</h3>
-    <img src="world_map.png" alt="World Map of Vitamin A Supplementation Coverage">
-    <p>This map gives a clear global picture. Darker colours show high coverage areas (East Asia, Latin America), while lighter areas highlight countries that still need urgent support.</p>
-
-    <h3>2. Bar Chart – 10 Countries with Lowest Coverage (2023)</h3>
-    <img src="bar_chart.png" alt="10 Countries with Lowest Vitamin A Coverage">
-    <p>These countries face the biggest challenges. Immediate action is needed to protect their children from preventable health problems.</p>
-
-    <h3>3. Scatterplot – GDP per Capita vs Coverage (with Linear Regression)</h3>
-    <img src="scatter_plot.png" alt="GDP vs Vitamin A Coverage">
-    <p>The red trend line clearly shows that as a country becomes wealthier, it tends to achieve higher Vitamin A supplementation rates.</p>
-
-    <h3>4. Time-Series Chart – Global Average Coverage Trend (2000–2023)</h3>
-    <img src="time_series.png" alt="Global Average Vitamin A Coverage Trend">
-    <p>Coverage has generally improved over two decades, but the dip in 2020 reminds us how easily progress can be disrupted by global events.</p>
-</div>
-
-<div class="section">
-    <h2>Recommendations</h2>
-    <p>To save more children’s lives, the following steps are recommended:</p>
-    <ul>
-        <li>Strengthen supply chains so supplements reach even remote areas reliably.</li>
-        <li>Combine Vitamin A distribution with regular vaccination drives and nutrition programmes.</li>
-        <li>Run community awareness campaigns so parents understand the importance of supplementation.</li>
-        <li>Provide extra support and funding to countries with coverage below 50%.</li>
-    </ul>
-    <p>Small improvements in coverage can lead to big reductions in child suffering and death.</p>
-</div>
-
-<div class="note">
-    <strong>Technical Note for Assessment:</strong> All visualisations were created using the plotnine package in Python. Data cleaning, merging of UNICEF indicator files with metadata, and analysis were performed using Polars. The full Quarto document (.qmd) containing the complete code is available in this repository.
-</div>
-
-</body>
-</html>
+    <p>Vitamin A is essential for good vision, strong immunity, and healthy growth in young children. Lack of Vitamin A (deficiency) is a serious but preventable problem, especially in developing countries. It can cause blindness and makes children more likely to die from common illnesses like measles and diarrhoea.</p>
+    <p>Simple Vitamin A
